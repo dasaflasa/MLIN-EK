@@ -1,0 +1,197 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #210078;
+    font-family: Georgia, serif;
+    color: #ffdf00;
+}
+
+header {
+    background: #ffdf00;
+    padding: 28px 15px;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #210078;
+    text-decoration: none;
+    font-size: 21px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #8a5700;
+}
+
+.naslov {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.naslov h1 {
+    font-size: 42px;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+}
+
+.naslov p {
+    color: white;
+    font-size: 20px;
+}
+
+.glavna {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    min-height: 600px;
+}
+
+.glavna img {
+    width: 100%;
+    height: 100%;
+    min-height: 300px;
+    object-fit: cover;
+}
+
+.besedilo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px;
+}
+
+.besedilo h2 {
+    font-size: 34px;
+    margin-bottom: 20px;
+}
+
+.besedilo p {
+    color: white;
+    font-size: 19px;
+    line-height: 1.8;
+    max-width: 450px;
+}
+
+.kartice {
+    max-width: 1100px;
+    margin: 30px auto 60px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+    gap: 25px;
+}
+
+.kartica {
+    background: #310b91;
+    padding: 30px;
+    text-align: center;
+    border: 1px solid #ffdf00;
+    border-radius: 10px;
+}
+
+.kartica h2 {
+    margin-bottom: 15px;
+}
+
+.kartica p {
+    color: white;
+    line-height: 1.7;
+}
+
+.kartica img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 7px;
+    margin-bottom: 15px;
+}
+
+.gumb {
+    display: inline-block;
+    background: #ffdf00;
+    color: #210078;
+    text-decoration: none;
+    padding: 13px 25px;
+    margin-top: 20px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.gumb:hover {
+    background: white;
+}
+
+form {
+    max-width: 600px;
+    margin: 30px auto 60px;
+    padding: 20px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 14px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-family: Georgia, serif;
+}
+
+button {
+    background: #ffdf00;
+    color: #210078;
+    border: none;
+    padding: 14px 30px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+footer {
+    background: #ffdf00;
+    color: #210078;
+    padding: 35px;
+    text-align: center;
+}
+
+footer p {
+    margin: 10px;
+}
+
+@media(max-width: 750px) {
+    nav {
+        gap: 18px;
+    }
+
+    nav a {
+        font-size: 16px;
+    }
+
+    .naslov h1 {
+        font-size: 32px;
+    }
+
+    .glavna {
+        grid-template-columns: 1fr;
+    }
+
+    .glavna img {
+        height: 280px;
+    }
+
+    .besedilo {
+        min-height: 240px;
+    }
+}
