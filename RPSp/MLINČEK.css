@@ -1,30 +1,97 @@
-body{
-    background-color: darkblue
+
+body {
+    background-color: #210080;
+    margin: 0;
 }
-h1{
-    color: #F5C800;
-    text-align: center;
-    font-size: 50px;
-    padding-bottom: 20px;
-    padding-top: 20px
-}
-nav{
-    padding: 50px;
-    background-color: #F5C800;
+
+nav {
+    padding: 35px;
+    background-color: #FFD500;
     color: darkblue;
-    text-align: right
+    text-align: center;
 }
-.a{
-    width: 1000px;
-    height: 600px
+
+nav a {
+    font-size: 27px;
+    padding-right: 35px;
+    color: darkblue;
+    text-decoration: none;
 }
-a{
-    font-size: 30px;
-}
-p{
-    text-align: right;
+
+nav a:hover {
     color: white;
-    font-size: 40px;
-    padding-right: 400px;
-    display: flex
+}
+
+h1 {
+    color: #FFD500;
+    text-align: center;
+    font-size: 38px;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.vsebina {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 240px 350px;
+}
+
+.a {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    grid-column: 1;
+    grid-row: 1;
+}
+
+p {
+    color: #FFD500;
+    font-size: 38px;
+    text-align: center;
+    padding-top: 5px;
+}
+
+.b {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    grid-column: 2;
+    grid-row: 2;
+}
+
+.email {
+    color: #FFD500;
+    font-size: 20px;
+    padding-left: 30px;
+    padding-top: 200px;
+}
+
+@media (max-width: 700px) {
+    nav {
+        padding: 20px 5px;
+    }
+
+    nav a {
+        font-size: 15px;
+        padding: 5px;
+    }
+
+    .vsebina {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .a, .b {
+        width: 100%;
+        height: auto;
+    }
+
+    p {
+        font-size: 28px;
+        padding: 20px;
+    }
+
+    .email {
+        padding: 30px;
+    }
 }
